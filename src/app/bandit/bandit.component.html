@@ -1,0 +1,16 @@
+<table border=1>
+<tr>
+<td *ngFor="let bandit of bandits.bandits; let i = index">
+    <div>
+      Bandit({{bandit.getZeroPoint()}})
+      <button (click)="bandit.increaseZeroPoint()">+</button>
+      <button (click)="bandit.decreaseZeroPoint()">-</button>
+    </div>
+    <div>
+      {{agent.Q[i]|number}}
+    </div>
+</td>
+</tr>
+</table>
+
+<button (click)="agent.step()">Step</button>

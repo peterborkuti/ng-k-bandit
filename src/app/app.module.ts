@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { BanditComponent } from './bandit/bandit.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BanditComponent
   ],
   imports: [
     BrowserModule
